@@ -1,0 +1,15 @@
+@import "./partials/variables/variables";
+@import "./partials/pages/home";
+
+*{
+    font-family: $primary-font;
+    .background {
+        background-image: url("../img/pexels-madison-inouye-1831234.jpg");
+        background-position: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+    }
+}

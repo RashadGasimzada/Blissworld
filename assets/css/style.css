@@ -1,0 +1,182 @@
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .hidden-search {
+    width: auto !important;
+  }
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .info-text {
+  background: -webkit-gradient(linear, left top, right top, from(#ff6699), to(#cc33ff));
+  background: linear-gradient(to right, #ff6699 0%, #cc33ff 100%);
+  height: 40px;
+}
+
+header .info-text p {
+  margin-bottom: 3px;
+  color: white;
+  letter-spacing: .5px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+header .menu-box {
+  background-color: #8cd0e3;
+  height: 115px;
+  padding: 15px 0px 5px 0px;
+}
+
+header .menu-box .nav-user {
+  margin: 0 20px;
+  height: 67px;
+}
+
+header .menu-box .nav-user .nav-user-section .nav-user-list {
+  margin: 0 15px;
+  text-align: center;
+}
+
+header .menu-box .nav-user .nav-user-section .nav-user-list .fa-magnifying-glass,
+header .menu-box .nav-user .nav-user-section .nav-user-list .fa-location-dot,
+header .menu-box .nav-user .nav-user-section .nav-user-list .fa-hand-sparkles,
+header .menu-box .nav-user .nav-user-section .nav-user-list .fa-basket-shopping {
+  color: white;
+}
+
+header .menu-box .nav-user .nav-user-section .nav-user-list .bag-btn {
+  position: relative;
+}
+
+header .menu-box .nav-user .nav-user-section .nav-user-list .bag-btn .item-count {
+  position: absolute;
+  position: absolute;
+  top: 8px;
+  left: 23px;
+  border: 1px solid #f5ea77;
+  background-color: #f5ea77;
+  border-radius: 50%;
+  color: black;
+  height: 20px;
+  width: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+header .menu-box .nav-user .nav-user-section .nav-user-list .search-text,
+header .menu-box .nav-user .nav-user-section .nav-user-list .findus-text,
+header .menu-box .nav-user .nav-user-section .nav-user-list .login-text,
+header .menu-box .nav-user .nav-user-section .nav-user-list .bag-text {
+  font-size: 15px;
+  color: white;
+  display: block;
+}
+
+header .menu-box .nav-user .logo {
+  width: 101px;
+  height: 35px;
+  margin-top: 15px;
+}
+
+header .menu-box .navigation-bar .nav-pages .nav-pages-list {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+header .menu-box .navigation-bar .nav-pages .nav-pages-list .nav-pages-text {
+  color: white;
+  margin: 0 12px;
+}
+
+header .menu-box .navigation-bar .nav-pages .nav-pages-list .nav-pages-text:hover {
+  color: #f5ea77;
+}
+
+header .hidden-search-box {
+  height: 110px;
+  background-color: white;
+}
+
+header .hidden-search-box .hidden-search {
+  border: 1px solid gray;
+  background-color: #f5ea77;
+  padding-left: 15px;
+  height: 40px;
+  width: 420px;
+}
+
+header .hidden-search-box .hidden-search:focus-visible {
+  outline: none;
+}
+
+header .hidden-search-box ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+header .hidden-search-box :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+header .hidden-search-box ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+header .hidden-search-box ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+header .hidden-search-box :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+header .hidden-search-box ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+* .background {
+  background-image: url("../img/pexels-madison-inouye-1831234.jpg");
+  background-position: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
