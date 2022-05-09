@@ -1,17 +1,22 @@
-$(function() {
-    $(".search-btn").mouseover(function(){
-        $(this).css("cursor","pointer");
-       
-        $(".fa-magnifying-glass").css("color","#f5ea77");
-        $(".search-text").css("color","#f5ea77");
+$(function () {
+    var modal = $("#myModal");
+
+    $(".search-btn").mouseover(function () {
+        $(this).css("cursor", "pointer");
+
+        $(".fa-magnifying-glass").css("color", "#f5ea77");
+        $(".search-text").css("color", "#f5ea77");
     });
-    $(".search-btn").mouseout(function(){
-        $(".fa-magnifying-glass").css("color","white");
-        $(".search-text").css("color","white");
+    $(".search-btn").mouseout(function () {
+        $(".fa-magnifying-glass").css("color", "white");
+        $(".search-text").css("color", "white");
     });
 
-    $(".search-btn").click(function(){
-        if($(".hidden-search-box").hasClass("d-none")) {
+    $(".search-btn").click(function () {
+        if(modal.css("display") == "flex") {
+            modal.css("display","none")
+        }
+        if ($(".hidden-search-box").hasClass("d-none")) {
             $(".hidden-search-box").addClass("d-flex");
             $(".hidden-search-box").removeClass("d-none");
         }
@@ -20,42 +25,60 @@ $(function() {
             $(".hidden-search-box").addClass("d-none");
         }
     });
+
+    $(".findus-btn").mouseover(function () {
+        $(this).css("cursor", "pointer");
+
+        $(".fa-location-dot").css("color", "#f5ea77");
+        $(".findus-text").css("color", "#f5ea77");
+    });
+    $(".findus-btn").mouseout(function () {
+        $(".fa-location-dot").css("color", "white");
+        $(".findus-text").css("color", "white");
+    });
+
+    $(".login-btn").mouseover(function () {
+        $(this).css("cursor", "pointer");
+
+        $(".fa-hand-sparkles").css("color", "#f5ea77");
+        $(".login-text").css("color", "#f5ea77");
+    });
+    $(".login-btn").mouseout(function () {
+        $(".fa-hand-sparkles").css("color", "white");
+        $(".login-text").css("color", "white");
+    });
+
+    $(".bag-btn").mouseover(function () {
+        $(this).css("cursor", "pointer");
+
+        $(".fa-basket-shopping").css("color", "#f5ea77");
+        $(".bag-text").css("color", "#f5ea77");
+    });
+    $(".bag-btn").mouseout(function () {
+        $(".fa-basket-shopping").css("color", "white");
+        $(".bag-text").css("color", "white");
+    });
+
     
-    $(".findus-btn").mouseover(function(){
-        $(this).css("cursor","pointer");
-       
-        $(".fa-location-dot").css("color","#f5ea77");
-        $(".findus-text").css("color","#f5ea77");
-    });
-    $(".findus-btn").mouseout(function(){
-        $(".fa-location-dot").css("color","white");
-        $(".findus-text").css("color","white");
-    });
 
-    $(".login-btn").mouseover(function(){
-        $(this).css("cursor","pointer");
-       
-        $(".fa-hand-sparkles").css("color","#f5ea77");
-        $(".login-text").css("color","#f5ea77");
-    });
-    $(".login-btn").mouseout(function(){
-        $(".fa-hand-sparkles").css("color","white");
-        $(".login-text").css("color","white");
-    });
+    $("#basket-btn").click(function () {
+        if($(".hidden-search-box").hasClass("d-flex")) {
+            $(".hidden-search-box").removeClass("d-flex");
+            $(".hidden-search-box").addClass("d-none");
+        }
+        if (modal.css("display") == "none") {
 
-    $(".bag-btn").mouseover(function(){
-        $(this).css("cursor","pointer");
-       
-        $(".fa-basket-shopping").css("color","#f5ea77");
-        $(".bag-text").css("color","#f5ea77");
-    });
-    $(".bag-btn").mouseout(function(){
-        $(".fa-basket-shopping").css("color","white");
-        $(".bag-text").css("color","white");
+            modal.css("display", "flex")
+        }
+        else {
+            modal.css("display", "none")
+        }
+
     });
 
 
-    
+
+
 
 
 
@@ -64,3 +87,9 @@ $(function() {
 
 
 })
+var modal = document.getElementById("myModal")
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
