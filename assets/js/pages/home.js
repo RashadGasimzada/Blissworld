@@ -130,10 +130,12 @@ $(function () {
       });
 
       $(".owl-carousel").owlCarousel({
-        loop:true,
         margin:10,
         nav:true,
+        loop:true,
+        autoplay:true,
         responsive:{
+            
             0:{
                 items:1
             },
@@ -152,6 +154,26 @@ $(function () {
     }
 
    
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 40) {
+            $(".menu-box").css({
+                'position' : 'fixed',
+                'width': '1296px',
+                'z-index': '999',
+                'top': '0',
+            })
+            $(".hidden-menu-box").removeClass("d-none");
+        }
+        else {
+            $(".menu-box").css({
+                'position' : 'static',
+                'width': '100%',
+                'z-index': '999',
+                'top': '0',
+            })
+            $(".hidden-menu-box").addClass("d-none");
+        }
+    });
 
 
 
