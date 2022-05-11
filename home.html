@@ -14,6 +14,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -26,14 +32,23 @@
             </div>
             <div class="menu-box">
                 <nav class="nav-user d-flex justify-content-between">
+
                     <ul class="nav-user-section d-flex">
+                        <div class="navbar my-toggle-btn navbar-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+
                         <li class="nav-user-list">
                             <a href="#" class="nav-user-link search-btn">
                                 <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                                 <span class="search-text">search</span>
                             </a>
                         </li>
-                        <li class="nav-user-list">
+                        <li class="nav-user-list findus-list">
                             <a href="#" class="nav-user-link findus-btn">
                                 <i class="fa-solid fa-location-dot fa-2x"></i>
                                 <span class="findus-text">find us</span>
@@ -60,14 +75,29 @@
                     </ul>
                 </nav>
                 <div class="navigation-bar">
-                    <nav class="nav-pages">
-                        <ul class="nav-pages-list d-flex justify-content-center">
-                            <li><a href="#" class="nav-pages-text">BEST SELLERS</a> /</li>
-                            <li><a href="#" class="nav-pages-text">SCIN CARE</a> /</li>
-                            <li><a href="#" class="nav-pages-text">BODY & HAIR CARE</a> /</li>
-                            <li><a href="#" class="nav-pages-text">SHOP ALL</a> /</li>
-                            <li><a href="#" class="nav-pages-text">THIS IS BLISS</a></li>
-                        </ul>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                        <div class="container-fluid">
+
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav ms-auto me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">BEST SELLERS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">SCIN CARE</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">BODY & HAIR CARE</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">SHOP ALL</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">THIS IS BLISS</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -79,28 +109,54 @@
                 </div>
             </div>
             <div class="hidden-scin-care">
-                
+
             </div>
 
         </div>
 
     </header>
     <main>
-        <div class="container">
-            <div class="hehe" style="position: relative">
-                <div id="myModal" class="my-modal">
-                    <div class="my-modal-content">
-                        <div class="modal-body">
-                            <span class="empty-modal">Your cart is empty</span>
+        <section id="basket-modal">
+            <div class="container">
+                <div class="modal-position" style="position: relative">
+                    <div id="myModal" class="my-modal">
+                        <div class="my-modal-content">
+                            <div class="modal-body">
+                                <span class="empty-modal">Your cart is empty</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="csp">
-
+        </section>
+        <section id="slider">
+            <div class="container">
+                <div class="slider-container">
+                    <div class="owl-carousel">
+                        <div class="slider-box">
+                           
+                                <img class="slider-img" src="./assets/img/bliss650.480.jpg" alt="bliss cream">
+                                <div class="violet-box">
+                                    <h1>Free Gift With Purchase!</h1>
+                                    <p class="violet-paragraph"> Get a Rose Gold Rescue Moisturizer with $50 purchase
+                                        <br>
+                                        No code required!
+                                    </p>
+                                    <a href="#" class="btn violet-btn btn-primary">SHOP NOW</a>
+                                </div>
+                           
+                        </div>
+                        <div> Your Content </div>
+                        <div> Your Content </div>
+                        <div> Your Content </div>
+                        <div> Your Content </div>
+                        <div> Your Content </div>
+                        <div> Your Content </div>
+                    </div>
+                </div>
+               
             </div>
-        </div>
+        </section>
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -109,6 +165,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/pages/home.js"></script>
 </body>
 
