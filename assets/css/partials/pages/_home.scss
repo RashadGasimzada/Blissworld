@@ -5,7 +5,15 @@ input[type="search"]::-webkit-search-results-decoration {
     -webkit-appearance: none;
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 355px) {
+    .arrivals-img {
+        height: 300px !important;
+    }
+    .arrival-btn {
+        font-size: 14px !important;
+        height: 35px !important;
+        width: 145px !important;
+    }
     .info-text {
         p {
             font-size: 12px !important;
@@ -18,7 +26,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (max-width: 395px) {
-
+   
     .violet-box,
     .yellow-box,
     .purple-box {
@@ -31,8 +39,13 @@ input[type="search"]::-webkit-search-results-decoration {
         padding: 0 0 20px 0 !important;
     }
 }
-
+@media only screen and (min-width:355px) and (max-width: 395px) {
+    .arrivals-img {
+        height: 335px !important;
+    }
+}
 @media only screen and (max-width: 425px) {
+   
     .nav-user-list {
         margin: 0 !important;
     }
@@ -53,7 +66,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (min-width:395px) and (max-width: 510px) {
-
+    .arrivals-img {
+        height: 435px !important;
+    }
     .violet-box,
     .yellow-box,
     .purple-box {
@@ -69,7 +84,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 @media only screen and (max-width: 510px) {
 
-
     h1 {
         font-size: 17px !important;
     }
@@ -80,7 +94,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (min-width: 510px) and (max-width: 768px) {
-
+    .menu-box {
+        width: 516px !important;
+    }
+    .arrivals-img {
+        height: 485px !important;
+    }
     .violet-box,
     .yellow-box,
     .purple-box {
@@ -100,9 +119,23 @@ input[type="search"]::-webkit-search-results-decoration {
         font-size: 14px !important;
     }
 }
-
+@media only screen and (max-width: 768px) {
+    .arrivals-container {
+        padding: 0 15px !important;
+    }
+}
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-
+    .menu-box {
+        width: 696px !important;
+    }
+    .arrivals-img {
+        height: 200px !important;
+    }
+    .arrival-btn {
+        font-size: 14px !important;
+        height: 35px !important;
+        width: 145px !important;
+    }
     .violet-box,
     .yellow-box,
     .purple-box {
@@ -124,7 +157,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (max-width: 992px) {
-
     .navbar-toggler {
         margin: 10px 0px !important;
     }
@@ -206,7 +238,19 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 @media only screen and (min-width:992px)and (max-width: 1200px) {
-
+    .menu-box {
+        width: 936px !important;
+    }
+    .arrivals-img {
+        height: 200px !important;
+    }
+   .card-text {
+       font-size: 10px !important;
+       margin: 0 !important;
+   }
+   .card-title {
+       font-size: 14px !important;
+   }
     .my-modal-content {
         width: 38% !important;
 
@@ -237,7 +281,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (min-width:1200px)and(max-width: 1400px) {
-
+    .menu-box {
+        width: 1116px !important;
+    }
+    .arrivals-img {
+        height: 230px !important;
+    }
     .my-modal-content {
         width: 33% !important;
 
@@ -254,9 +303,6 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 }
 
-.owl-nav {
-    display: none;
-}
 
 ul,
 li {
@@ -591,23 +637,54 @@ main {
                 text-align: center;
             }
 
+           .second-slider {
+               position: relative;
+               .owl-nav {
+                   position: absolute;
+                   .owl-prev {
+                    position: absolute;
+                }
+               }
+               
             .arrivals-img {
                 height: 290px;
-
-                background-image: url("../img/Skin_Mergency_Treatment_Set_Carton_Front__58833.jpg");
                 background-repeat: no-repeat;
                 background-size: contain;
-
+                span {
+                    padding: 3px 8px;
+                    background-color: #F5EA77;
+                    color: #333;
+                }
+            }
+            .img-1 {
+                background-image: url("../img/Skin_Mergency_Treatment_Set_Carton_Front__58833.jpg");
                 &:hover {
                     background-image: url("../img/Skin_Mergency_Lactic_Acid_PINK_SWATCH_A__21458.jpg");
                 }
-
             }
-
+            .img-2 {
+                background-image: url("../img/KP_Skin_Smoothing_Body_Butter__13368.jpg");
+                &:hover {
+                    background-image: url("../img/KP_Skin_Smoothing_Body_Butter_Swatch_A__26980.webp");
+                }
+            }
+            .img-3 {
+                background-image: url("../img/Mighty_Biome_Moisturizer_Concentrate_Front__50376.webp");
+                &:hover {
+                    background-image: url("../img/Mighty_Biome_Moisturizer_Concentrate_Swatch_A__27977.webp");
+                }
+            }
+            .img-4 {
+                background-image: url("../img/Mighty_Biome_Toner_Front__30153.webp");
+                &:hover {
+                    background-image: url("../img/Mighty_Biome_Toner_Swatch_A__13604.webp");
+                }
+            }
             .card-body {
                 text-align: center;
+                height: 190px;
                 padding: 0 0 15px 0;
-
+                position: relative;
                 .rating {
                     margin-bottom: 8px;
 
@@ -633,6 +710,9 @@ main {
                     margin-top: 8px;
                 }
                 .arrival-btn {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    bottom: 20px;
                     height: 40px;
                     width: 180px;
                     border: none;
@@ -647,6 +727,7 @@ main {
                     }
                 }
             }
+           }
         }
 
     }
