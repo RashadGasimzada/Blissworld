@@ -9,11 +9,13 @@ input[type="search"]::-webkit-search-results-decoration {
     .arrivals-img {
         height: 300px !important;
     }
+
     .arrival-btn {
         font-size: 14px !important;
         height: 35px !important;
         width: 145px !important;
     }
+
     .info-text {
         p {
             font-size: 12px !important;
@@ -26,11 +28,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (max-width: 395px) {
-   
+
     .violet-box,
     .yellow-box,
     .purple-box {
         height: 350px !important;
+
         .slider-img {
             width: 260px !important;
 
@@ -39,13 +42,15 @@ input[type="search"]::-webkit-search-results-decoration {
         padding: 0 0 20px 0 !important;
     }
 }
+
 @media only screen and (min-width:355px) and (max-width: 395px) {
     .arrivals-img {
         height: 335px !important;
     }
 }
+
 @media only screen and (max-width: 425px) {
-   
+
     .nav-user-list {
         margin: 0 !important;
     }
@@ -69,6 +74,7 @@ input[type="search"]::-webkit-search-results-decoration {
     .arrivals-img {
         height: 435px !important;
     }
+
     .violet-box,
     .yellow-box,
     .purple-box {
@@ -83,6 +89,26 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (max-width: 510px) {
+    .common-container {
+        padding: 0 !important;
+        .my-item {
+            text-align: center !important;
+            margin-bottom: 50px;
+            img {
+                width: 100% !important;
+            }
+            .text-box {
+                width: 100% !important;
+                position: static !important;
+                transform: none !important;
+            }
+            .two-items-btn {
+                margin-top: 10px !important;
+                transform: none !important;
+                position: static !important;
+            }
+        }
+    }
 
     h1 {
         font-size: 17px !important;
@@ -94,12 +120,26 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (min-width: 510px) and (max-width: 768px) {
+    .my-item {
+        margin-bottom: 100px;
+        img {
+            width: 390px !important;
+        }
+        .text-box {
+            width: 355px !important;
+        }
+        .two-items-btn {
+            transform: translateX(-200%) !important;
+        }
+    }
     .menu-box {
         width: 516px !important;
     }
+
     .arrivals-img {
         height: 485px !important;
     }
+
     .violet-box,
     .yellow-box,
     .purple-box {
@@ -119,23 +159,37 @@ input[type="search"]::-webkit-search-results-decoration {
         font-size: 14px !important;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .arrivals-container {
         padding: 0 15px !important;
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .my-item {
+        margin-bottom: 100px;
+        .text-box {
+            width: 520px !important;
+        }
+        .two-items-btn {
+            transform: translateX(170%) !important;
+        }
+    }
     .menu-box {
         width: 696px !important;
     }
+
     .arrivals-img {
         height: 200px !important;
     }
+
     .arrival-btn {
         font-size: 14px !important;
         height: 35px !important;
         width: 145px !important;
     }
+
     .violet-box,
     .yellow-box,
     .purple-box {
@@ -157,6 +211,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (max-width: 992px) {
+    .right-side-cruelty {
+        img {
+            width: 100% !important;
+            
+        }
+    }
     .navbar-toggler {
         margin: 10px 0px !important;
     }
@@ -238,19 +298,40 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 @media only screen and (min-width:992px)and (max-width: 1200px) {
+    .right-side-cruelty {
+        img {
+            width: 416px !important;
+            
+        }
+    }
+    .my-item {
+        img {
+            width: 393px !important;
+        }
+        .text-box {
+            width: 355px !important;
+        }
+        .two-items-btn {
+            transform: translateX(-205%) !important;
+        }
+    }
     .menu-box {
         width: 936px !important;
     }
+
     .arrivals-img {
         height: 200px !important;
     }
-   .card-text {
-       font-size: 10px !important;
-       margin: 0 !important;
-   }
-   .card-title {
-       font-size: 14px !important;
-   }
+
+    .card-text {
+        font-size: 10px !important;
+        margin: 0 !important;
+    }
+
+    .card-title {
+        font-size: 14px !important;
+    }
+
     .my-modal-content {
         width: 38% !important;
 
@@ -281,12 +362,31 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media only screen and (min-width:1200px)and(max-width: 1400px) {
+    .right-side-cruelty {
+        img {
+            width: 506px !important;
+            
+        }
+    }
+    .my-item {
+        img {
+            width: 483px !important;
+        }
+        .text-box {
+            width: 440px !important;
+        }
+        .two-items-btn {
+            transform: translateX(-235%) !important;
+        }
+    }
     .menu-box {
         width: 1116px !important;
     }
+
     .arrivals-img {
         height: 230px !important;
     }
+
     .my-modal-content {
         width: 33% !important;
 
@@ -331,10 +431,12 @@ header {
             font-weight: 900;
         }
     }
+
     .hidden-menu-box {
         height: 115px;
         width: 100%;
     }
+
     .menu-box {
         background-color: rgb(140, 208, 227);
         height: 115px;
@@ -533,6 +635,7 @@ main {
     .slider-container {
         background-color: white;
         padding: 40px 40px 10px 40px;
+
         .owl-carousel {
 
             .slider-box {
@@ -637,84 +740,196 @@ main {
                 text-align: center;
             }
 
-           .second-slider {
-               position: relative;
-               .owl-nav {
-                   position: absolute;
-                   .owl-prev {
-                    position: absolute;
-                }
-               }
-               
-            .arrivals-img {
-                height: 290px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                span {
-                    padding: 3px 8px;
-                    background-color: #F5EA77;
-                    color: #333;
-                }
-            }
-            .img-1 {
-                background-image: url("../img/Skin_Mergency_Treatment_Set_Carton_Front__58833.jpg");
-                &:hover {
-                    background-image: url("../img/Skin_Mergency_Lactic_Acid_PINK_SWATCH_A__21458.jpg");
-                }
-            }
-            .img-2 {
-                background-image: url("../img/KP_Skin_Smoothing_Body_Butter__13368.jpg");
-                &:hover {
-                    background-image: url("../img/KP_Skin_Smoothing_Body_Butter_Swatch_A__26980.webp");
-                }
-            }
-            .img-3 {
-                background-image: url("../img/Mighty_Biome_Moisturizer_Concentrate_Front__50376.webp");
-                &:hover {
-                    background-image: url("../img/Mighty_Biome_Moisturizer_Concentrate_Swatch_A__27977.webp");
-                }
-            }
-            .img-4 {
-                background-image: url("../img/Mighty_Biome_Toner_Front__30153.webp");
-                &:hover {
-                    background-image: url("../img/Mighty_Biome_Toner_Swatch_A__13604.webp");
-                }
-            }
-            .card-body {
-                text-align: center;
-                height: 190px;
-                padding: 0 0 15px 0;
+            .second-slider {
                 position: relative;
-                .rating {
-                    margin-bottom: 8px;
 
-                    .fa-heart {
-                        color: #73D2E6;
-                    }
-
-                    .my-heart {
-                        color: #D7D7D7;
-                    }
-                }
-
-                .card-title {
-                    font-size: 16px;
-                    line-height: 17px;
-                    font-weight: 600;
-                    color: #333;
-                }
-
-                .card-text {
-                    font-size: 13px;
-                    line-height: 15px;
-                    margin-top: 8px;
-                }
-                .arrival-btn {
+                .owl-nav {
                     position: absolute;
-                    transform: translateX(-50%);
-                    bottom: 20px;
+
+                    .owl-prev {
+                        position: absolute;
+                    }
+                }
+
+                .arrivals-img {
+                    height: 290px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                    span {
+                        padding: 3px 8px;
+                        background-color: #F5EA77;
+                        color: #333;
+                    }
+                }
+
+                .img-1 {
+                    background-image: url("../img/Skin_Mergency_Treatment_Set_Carton_Front__58833.jpg");
+
+                    &:hover {
+                        background-image: url("../img/Skin_Mergency_Lactic_Acid_PINK_SWATCH_A__21458.jpg");
+                    }
+                }
+
+                .img-2 {
+                    background-image: url("../img/KP_Skin_Smoothing_Body_Butter__13368.jpg");
+
+                    &:hover {
+                        background-image: url("../img/KP_Skin_Smoothing_Body_Butter_Swatch_A__26980.webp");
+                    }
+                }
+
+                .img-3 {
+                    background-image: url("../img/Mighty_Biome_Moisturizer_Concentrate_Front__50376.webp");
+
+                    &:hover {
+                        background-image: url("../img/Mighty_Biome_Moisturizer_Concentrate_Swatch_A__27977.webp");
+                    }
+                }
+
+                .img-4 {
+                    background-image: url("../img/Mighty_Biome_Toner_Front__30153.webp");
+
+                    &:hover {
+                        background-image: url("../img/Mighty_Biome_Toner_Swatch_A__13604.webp");
+                    }
+                }
+
+                .card-body {
+                    text-align: center;
+                    height: 190px;
+                    padding: 0 0 15px 0;
+                    position: relative;
+
+                    .rating {
+                        margin-bottom: 8px;
+
+                        .fa-heart {
+                            color: #73D2E6;
+                        }
+
+                        .my-heart {
+                            color: #D7D7D7;
+                        }
+                    }
+
+                    .card-title {
+                        font-size: 16px;
+                        line-height: 17px;
+                        font-weight: 600;
+                        color: #333;
+                    }
+
+                    .card-text {
+                        font-size: 13px;
+                        line-height: 15px;
+                        margin-top: 8px;
+                    }
+
+                    .arrival-btn {
+                        position: absolute;
+                        transform: translateX(-50%);
+                        bottom: 20px;
+                        height: 40px;
+                        width: 180px;
+                        border: none;
+                        border-radius: 0;
+                        cursor: pointer;
+                        background-color: #8CD0E3;
+                        box-shadow: 3px 3px 0 #f5ea77;
+
+                        &:hover {
+                            box-shadow: 3px 3px 0 #fdb1be;
+                            background-color: #948AD3;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .only-bliss-container {
+        background-color: white;
+
+        .border-box {
+            border: 1px solid #8cd0e3;
+            border-right: none;
+            border-left: none;
+            padding: 10px 0;
+
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .items-box {
+                width: 220px;
+
+                img {
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+
+                .text-box {
+                    margin-left: 10px;
+
+                    p {
+
+                        font-weight: bold;
+                        margin: 0;
+                        font-size: 12px;
+                        text-align: left;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .gradient-box {
+        background: linear-gradient(to bottom, #8cd0e3 0, #f08ccd 100%);
+
+        .common-container {
+            padding: 45px 63px 85px;
+
+            .my-item {
+                position: relative;
+
+                img {
+                    width: 573px;
+                }
+
+                .text-box {
+                    width: 520px;
+                    position: absolute;
+                    bottom: -28px;
+                    transform: translateX(5%);
+                    text-align: center;
+                    background-color: white;
+                    padding: 13px 38px 24px;
+
+                    h3 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin: 0;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+
+                .two-items-btn {
+                    position: absolute;
+                    transform: translateX(-272%);
+                    bottom: -45px;
                     height: 40px;
-                    width: 180px;
+                    width: 130px;
                     border: none;
                     border-radius: 0;
                     cursor: pointer;
@@ -727,10 +942,50 @@ main {
                     }
                 }
             }
-           }
         }
-
     }
+    .back-cruelty {
+        background: #d4deff;
+        padding: 40px;
+        .left-side-cruelty {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2 {
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 34px;
+                color: #000;
+                margin-bottom: 0.5rem;
+                margin-top: 0;
+            }
+            p {
+                font-size: 16px;
+            }
+            .cruelty-btn {
+                height: 40px;
+                width: 180px;
+                border: none;
+                margin-bottom: 10px;
+                border-radius: 0;
+                cursor: pointer;
+                background-color: #8CD0E3;
+                box-shadow: 3px 3px 0 #f5ea77;
+
+                &:hover {
+                    box-shadow: 3px 3px 0 #fdb1be;
+                    background-color: #948AD3;
+                }
+            }
+        }
+        .right-side-cruelty {
+            img {
+                width: 596px;
+                
+            }
+        }
+    }
+
 }
 
 .owl-dot {
