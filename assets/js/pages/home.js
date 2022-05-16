@@ -164,6 +164,24 @@ $(function () {
             }
         }
     })
+    $(".last-slider").owlCarousel({
+        margin: 10,
+        loop: false,
+        nav: false,
+       
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1050: {
+                items: 4
+            }
+        }
+    })
 
     if ($("html").css("height") > $(window).innerHeight) {
         $(".my-modal").css("height", "calc(100%-155px)");
