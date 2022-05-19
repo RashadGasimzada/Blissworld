@@ -223,6 +223,47 @@ $(function () {
     });
 
 
+    $(".fa-minus").click(function(){
+        if ($(".item-count input").val() > 1) {
+            $(".item-count input").val( function(i, oldval) {
+                return --oldval;
+            });
+        }
+
+
+    })
+    $(".fa-plus").click(function(){
+        if ($(".item-count input").val() < 10) {
+            $(".item-count input").val( function(i, oldval) {
+                return ++oldval;
+            });
+        }
+    })
+
+
+
+    $(".tabs li").click(function() {
+        
+        $(".tabs li").removeClass("active");
+        $(this).addClass("active");
+        if ($("#tab-1").hasClass("active")) {
+            $("#content-1").addClass("d-block")
+            $("#content-1").removeClass("d-none")
+
+            $("#content-2").addClass("d-none")
+            $("#content-2").removeClass("d-block")
+        }
+        else {
+            $("#content-2").addClass("d-block")
+            $("#content-2").removeClass("d-none")
+
+            $("#content-1").addClass("d-none")
+            $("#content-1").removeClass("d-block")
+        }
+    })
+
+
+
 
 
 

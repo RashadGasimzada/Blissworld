@@ -1,0 +1,147 @@
+@media only screen and (max-width: 992px) {
+    .col-info {
+        padding: 70px 12px 0 12px !important;
+    }
+    .desc-content {
+        margin: 0 !important;
+    }
+    #content-1 {
+        margin: 20px 20px 12px 20px !important;
+    }
+}
+
+.info-back {
+    background: linear-gradient(to right, #f3daeb 37%, #fff 100%);
+    padding: 40px 40px 60px 40px;
+}
+
+.item-slider-btn {
+    width: 65px !important;
+
+    img {
+        border: 1px solid #f5ea77 !important;
+    }
+}
+
+.col-info {
+    padding-left: 70px;
+
+    .item-info {
+        .preheader {
+            font-weight: 600;
+            font-size: 12px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 35px;
+            line-height: 39px;
+        }
+
+        .short-desc {
+
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 24px;
+
+        }
+
+        .read-reviews {
+            font-size: 13px;
+            color: black;
+            text-decoration: underline;
+
+            &:hover {
+                color: #757575;
+            }
+        }
+
+        .item-count {
+            border: 1px solid #c2c2c2;
+            padding: 4px 8px;
+            width: 86px;
+
+            input {
+                background-color: transparent;
+                border: none;
+                width: 30px;
+                text-align: center;
+            }
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+        .item-btn {
+            height: 40px;
+            width: 180px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            background-color: #f5ea77;
+            box-shadow: 3px 3px 0 #8CD0E3;
+
+            &:hover {
+                box-shadow: 3px 3px 0 #fdb1be;
+                background-color: #948AD3;
+            }
+        }
+
+
+    }
+}
+
+.desc-box {
+    background-color: #f4f9fb;
+    padding: 60px 0 40px 0;
+
+    .desc-content {
+        margin: 0 100px;
+
+        .tabs {
+            border-top: 1px solid #8cd0e3;
+            border-bottom: 1px solid #8cd0e3;
+
+            ul {
+                text-align: center;
+                margin: 0;
+
+                li {
+                    padding: 10px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: inline-block;
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+
+                .active {
+                    color: #5fbccf;
+                }
+            }
+        }
+
+        .tab-content {
+            margin: 50px 50px 30px 50px;
+
+            ul {
+                font-size: 13px;
+                line-height: 17px;
+                li {
+                    margin-bottom: 16px;
+                }
+            }
+            .logo-imgs {
+                img {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

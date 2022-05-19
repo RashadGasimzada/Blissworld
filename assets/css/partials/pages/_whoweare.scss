@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1200px) {
+    .col-lg-6.d-flex {
+        padding: 0 !important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .col-lg-6.d-flex {
+        margin-top: 20px;
+    }
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+p {
+    margin-bottom: 15px;
+}
+.story-box {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+
+    .page-heading {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 3rem;
+    }
+    img {
+        width: 100%;
+    }
+    .col-lg-6.d-flex {
+        padding: 0 70px;
+    }
+}
+.heroes-white-back {
+    background-color: white;
+    padding: 0 0 50px;
+    .heroes-box {
+        background-color: #f4f9fb;
+        padding: 20px;
+        text-align: center;
+        margin: 0 27px;
+        .heroes-col {
+            img {
+                width: 100%;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+}

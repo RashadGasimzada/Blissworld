@@ -831,17 +831,7 @@ main {
                     padding: 0 0 15px 0;
                     position: relative;
 
-                    .rating {
-                        margin-bottom: 8px;
-
-                        .fa-heart {
-                            color: #73D2E6;
-                        }
-
-                        .my-heart {
-                            color: #D7D7D7;
-                        }
-                    }
+                   
 
                     .card-title {
                         font-size: 16px;
@@ -916,6 +906,17 @@ main {
                     }
                 }
             }
+        }
+    }
+    .rating {
+        margin-bottom: 8px;
+
+        .fa-heart {
+            color: #73D2E6;
+        }
+
+        .my-heart {
+            color: #D7D7D7;
         }
     }
 

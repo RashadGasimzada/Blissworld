@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bliss</title>
+    <title>Product Detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -127,49 +127,115 @@
                 </div>
             </div>
         </section>
-        <section id="slider">
+        <section id="product-info">
             <div class="container">
-                <div class="slider-container">
-                    <div class="owl-carousel first-slider owl-theme">
-                        <div class="slider-box">
-                            <div class="violet-box">
-                                <img class="slider-img" src="./assets/img/bliss650.480.jpg" alt="bliss cream">
-                                <h1>Free Gift With Purchase!</h1>
-                                <p class="violet-paragraph"> Get a Rose Gold Rescue Moisturizer with $50 purchase
-                                    <br>
-                                    No code required!
-                                </p>
-                                <a href="#" class="btn violet-btn btn-primary">SHOP NOW</a>
-                            </div>
-                        </div>
-                        <div class="slider-box">
-                            <div class="yellow-box">
-                                <img class="slider-img" src="./assets/img/carousel-blockstar-hp-banner.jpg"
-                                    alt="bliss cream">
-                                <h1>Block Star<sup>™</sup></h1>
-                                <p class="violet-paragraph"> This 100% mineral daily sunscreen blends like a dream and
-                                    delivers
-                                    <br>
-                                    broad spectrum protection,
-                                    plus a smooth never-greasy finish.
-                                </p>
-                                <a href="#" class="btn yellow-btn btn-primary">SHOP NOW</a>
-                            </div>
-                        </div>
-                        <div class="slider-box">
-                            <div class="purple-box">
-                                <img class="slider-img" src="./assets/img/15-ygt-690x480-min-resize.jpg"
-                                    alt="bliss cream">
-                                <h1>NEW! Youth Got This<sup>™</sup></h1>
-                                <p class="violet-paragraph"> This 100% mineral daily sunscreen blends like a dream and
-                                    delivers
-                                    <br>
-                                    broad spectrum protection,
-                                    plus a smooth never-greasy finish.
-                                </p>
-                                <a href="#" class="btn violet-btn btn-primary">SHOP NOW</a>
-                            </div>
+                <div class="info-back">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="item-slider">
+                                <div id="carouselExampleIndicators" data-bs-interval="false" class="carousel slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active item-slider-btn" aria-current="true"
+                                            aria-label="Slide 1"><img
+                                                src="./assets/img/Skin_Mergency_Treatment_Set_Carton_Front__58833.jpg"
+                                                class="d-block w-100" alt="item img"></button>
+                                        <button type="button" class="item-slider-btn"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                            aria-label="Slide 2"><img
+                                                src="./assets/img/Skin_Mergency_Lactic_Acid_PINK_SWATCH_A__21458.jpg"
+                                                class="d-block w-100" alt="item img"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/Skin_Mergency_Treatment_Set_Carton_Front__58833.jpg"
+                                                class="d-block w-100" alt="item img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/Skin_Mergency_Lactic_Acid_PINK_SWATCH_A__21458.jpg"
+                                                class="d-block w-100" alt="item img">
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-info">
+                            <div class="item-info">
+                                <p class="preheader">NEW</p>
+                                <h1>Skin-mergency Ampoules Kit</h1>
+                                <p class="short-desc">Instant Relief Treatment Set</p>
+                                <div class="rating" style="display: inline-block;">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart my-heart"></i>
+                                </div>
+                                <a href="#" class="read-reviews">Read 13 Reviews</a>
+                                <p>This trio of targeted treatments delivers concentrated doses of
+                                    hero ingredients that penetrate the skin’s surface layers and bring immediate relief
+                                    to a variety of skin concerns.</p>
+                                <p>Count:</p>
+                                <div class="item-count">
+                                    <i class="fa-solid fa-minus"></i>
+                                    <input type="text" disabled value="1">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <button class="btn btn-primary mt-3 item-btn">ADD TO BAG $22</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product-desc">
+            <div class="container">
+                <div class="desc-box">
+                    <div class="desc-content">
+                        <div class="tabs">
+                            <ul>
+                                <li id="tab-1" class="active">Key Ingridients</li>
+                                <li id="tab-2">Direction</li>
+                            </ul>
+                        </div>
+                        <div id="content-1" class="tab-content d-block">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><strong>CICA:</strong> Derived from plants, it visibly neutralizes redness
+                                            and irritation
+                                            by soothing and relieving tightness and discomfort.
+                                        </li>
+                                        <li><strong>VITAMIN E:</strong> This powerful antioxidant reduces water loss and
+                                            increases moisture levels on contact to rehydrate, rebalance and visibly
+                                            repair skin’s barrier.
+                                        </li>
+                                        <li><strong>LACTIC ACID:</strong> An AHA that smooths skin’s texture with gentle
+                                            exfoliation while
+                                            tightening pores and lightly hydrating.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 logo-imgs">
+                                    <img src="./assets/img/roundel-vegan-recent.webp" alt="logo">
+                                    <img src="./assets/img/roundel-clean-recent.webp" alt="logo">
+                                    <img src="./assets/img/roundel-cruelty-free-recent.webp" alt="logo">
+                                    <img src="./assets/img/roundel-planet-friendly-recent.webp" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content-2" class="tab-content d-none">
+                            <ul>
+                                <li><strong>CICA & VITAMIN E:</strong> Remove cap. Turn upside down. Press button to
+                                    dispense. Use morning and night. Avoid eye contact.</li>
+                                <li><strong>LACTIC ACID:</strong> Remove cap. Turn upside down. Press button to dispense. NOTE: Test on a
+                                    small area before applying to a large area. Gradually build up to nightly use
+                                    depending on skin’s tolerance. Avoid eye contact. The Lactic Acid treatment contains
+                                    an AHA that may increase skin’s sensitivity to the sun. Be sure to apply SPF daily
+                                    when using this product.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -180,13 +246,12 @@
                 <div class="arrivals-back">
                     <div class="arrivals-container">
                         <div class="name-of-sect">
-                            <h2>New Arrivals</h2>
-                            <p>Treat yourself to smooth, hydrated, happy skin.</p>
+                            <h2 class="mb-5">Perfect Pairings</h2>
                         </div>
                         <div class="owl-carousel second-slider owl-theme">
                             <div class="card-box">
                                 <div class="card">
-                                    <a href="./productdetail.html" class="card-img-top arrivals-img img-1"><span>NEW</span></a>
+                                    <a href="#" class="card-img-top arrivals-img img-1"><span>NEW</span></a>
                                     <div class="card-body">
                                         <div class="rating">
                                             <i class="fa-solid fa-heart"></i>
@@ -195,9 +260,9 @@
                                             <i class="fa-solid fa-heart"></i>
                                             <i class="fa-solid fa-heart my-heart"></i>
                                         </div>
-                                        <a href="./productdetail.html" class="card-title">Skin-mergency Ampoules Kit</a>
+                                        <a href="#" class="card-title">Skin-mergency Ampoules Kit</a>
                                         <p class="card-text">Instant Relief Treatment Set</p>
-                                        <a href="./productdetail.html" class="btn arrival-btn btn-primary">ADD TO BAG $22</a>
+                                        <a href="#" class="btn arrival-btn btn-primary">ADD TO BAG $22</a>
                                     </div>
                                 </div>
                             </div>
@@ -343,222 +408,6 @@
                 </div>
             </div>
         </section>
-        <section id="only-bliss">
-            <div class="container">
-                <div class="only-bliss-container">
-                    <div class="only-bliss-box py-4 px-5">
-                        <div class="border-box">
-                            <div class="row">
-                                <div class="col-lg-3 d-flex justify-content-center align-items-center">
-                                    <h3>Only on blissworld.com</h3>
-                                </div>
-                                <div class="col-lg-3 d-flex justify-content-center align-items-center">
-                                    <div class="items-box d-flex">
-                                        <img src="./assets/img/truck73-37.gif" alt="truck">
-                                        <div class="text-box">
-                                            <p>FREE SHIPPING</p>
-                                            <p>(on orders over $40)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 d-flex justify-content-center align-items-center">
-                                    <div class="items-box d-flex">
-                                        <img src="./assets/img/samples-gif-ani-73x37.gif" alt="samples">
-                                        <div class="text-box">
-                                            <p>FREE SAMPLES</p>
-                                            <p>(Yes, please!)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 d-flex justify-content-center align-items-center">
-                                    <div class="items-box d-flex">
-                                        <img src="./assets/img/gifts-gif-ani-73x37.gif" alt="gift">
-                                        <div class="text-box">
-                                            <p>SURPRISES</p>
-                                            <p>(You will love. Trust.)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="two-items">
-            <div class="container">
-                <div class="gradient-box">
-                    <div class="common-container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="my-item">
-                                    <a href="#"><img src="./assets/img/twintout-fabulips-retina.jpg" alt="fabulips"></a>
-                                    <div class="text-box">
-                                        <h3>NEW! Fabulips™</h3>
-                                        <p>Three new ways to pamper & nourish your pout.</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary two-items-btn">SHOP</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="my-item">
-                                    <a href="#"><img src="./assets/img/twintout-rest-assured-with-claim.webp"
-                                            alt="rest assured"></a>
-                                    <div class="text-box">
-                                        <h3>NEW! Rest Assured™ </h3>
-                                        <p>Visibly reduces dark circles & depuffs for refreshed eyes.</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary two-items-btn">SHOP NOW</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="cruelty-free">
-            <div class="container">
-                <div class="back-cruelty">
-                    <div class="row">
-                        <div class="col-lg-6 d-flex align-items-center">
-                            <div class="left-side-cruelty">
-                                <h2>
-                                    Clean, Cruelty-Free,
-                                    <br>
-                                    Dermatologist-Tested
-                                </h2>
-                                <p>We are a clean, cruelty-free, planet-friendly skincare brand that delivers
-                                    transformative, dermatologist-tested products for total skin happiness.</p>
-                                <a href="#" class="btn btn-primary cruelty-btn">LEARN MORE</a>
-                                <a href="#" class="btn btn-primary cruelty-btn">SHOP BLISS</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="right-side-cruelty">
-                                <img src="./assets/img/hp-about-mobile.webp" alt="girl">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="bright-idea">
-            <div class="container">
-                <div class="idea-back">
-                    <h2>Bright Idea</h2>
-                    <p>Boosts Brightness & Elasticity In 1 Use With Clinical-Grade Vitamin C</p>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top idea-img"
-                                    src="./assets/img/bright-idea-section-moisturizer-resized.webp"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <a href="#" class="card-title">Bright Idea Moisturizer</a>
-                                    <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting & Brightening
-                                        Moisturizer</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $26</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top idea-img" src="./assets/img/bright-idea-section-resized.webp"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <a href="#" class="card-title">Bright Idea Serum</a>
-                                    <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting & Brightening Serum
-                                    </p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $28</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top idea-img"
-                                    src="./assets/img/bright-idea-section-eye-cream-resized.webp" alt="Card image cap">
-                                <div class="card-body">
-                                    <a href="#" class="card-title">Bright Idea Eye Cream</a>
-                                    <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting Eye Cream</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $25</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top idea-img"
-                                    src="./assets/img/bright-idea-section-eye-patches-resized.webp"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <a href="#" class="card-title">Bright Idea Eyes</a>
-                                    <p class="card-text">Holographic Foil Eye Patches</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $4</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top idea-img" style="border-radius: 50%;"
-                                    src="./assets/img/331499757-bi-sheet-mask-front-290x290-min.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <a href="#" class="card-title">Bright Idea Face Mask</a>
-                                    <p class="card-text">Holographic Foil Sheet Mask</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $4</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top idea-img"
-                                    src="./assets/img/bright-idea-section-moisturizer-resized.webp"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <a href="#" class="card-title">Bright Idea Moisturizer Travel Mini</a>
-                                    <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting & Brightening
-                                        Moisturizer</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $5</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="last-slider">
-            <div class="container">
-                <div class="last-slider-box">
-                    <a href="#">@bliss</a>
-                    <p>Your daily dose of happiness, unfiltered.</p>
-                    <div class="owl-carousel last-slider owl-theme">
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1631148572.056339586743.jpeg" alt="slider image">
-                        </div>
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1627144000.828653377312.jpeg" alt="slider image">
-                        </div>
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1632260466.78999769507.jpeg" alt="slider image">
-                        </div>
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1628530304.435757697560.jpeg" alt="slider image">
-                        </div>
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1631148572.056339586743.jpeg" alt="slider image">
-                        </div>
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1627144000.828653377312.jpeg" alt="slider image">
-                        </div>
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1632260466.78999769507.jpeg" alt="slider image">
-                        </div>
-                        <div class="last-slider-img">
-                            <img src="./assets/img/1628530304.435757697560.jpeg" alt="slider image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
         <div class="container">
@@ -614,30 +463,30 @@
                                         </a>
                                     </li>
                                     <li class="list-group-item"><a href="#">
-                                        Ordering & Payment
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">
-                                        SMS Texts and Alerts
-                                    </a>
-                                </li>
+                                            Ordering & Payment
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">
+                                            SMS Texts and Alerts
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <h3>THE DRY STAFF</h3>
                                 <ul class="list-group">
                                     <li class="list-group-item"><a href="#">
-                                        Privacy Policy
+                                            Privacy Policy
                                         </a>
                                     </li>
                                     <li class="list-group-item">
                                         <a href="#">
-                                            Terms & Conditions 
+                                            Terms & Conditions
                                         </a>
                                     </li>
                                     <li class="list-group-item"><a href="#">
-                                        Accessibility Statement
+                                            Accessibility Statement
                                         </a>
                                     </li>
                                     <li class="list-group-item">
