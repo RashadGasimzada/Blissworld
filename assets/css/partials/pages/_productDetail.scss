@@ -48,15 +48,7 @@
 
         }
 
-        .read-reviews {
-            font-size: 13px;
-            color: black;
-            text-decoration: underline;
-
-            &:hover {
-                color: #757575;
-            }
-        }
+       
 
         .item-count {
             border: 1px solid #c2c2c2;
@@ -91,6 +83,15 @@
         }
 
 
+    }
+}
+.read-reviews {
+    font-size: 13px;
+    color: black;
+    text-decoration: underline;
+
+    &:hover {
+        color: #757575;
     }
 }
 

@@ -1,0 +1,57 @@
+@media only screen and (max-width: 576px) {
+    .sign-in-back {
+        padding: 10px !important;
+        .sign-in-box {
+            padding: 0 !important;
+        }
+    }
+}
+.sign-in-back {
+    background-image: url("../img/circle-bk.png");
+    background-color: #f6ecf3;
+    padding: 50px 45px 80px;
+
+    .sign-in-box {
+        height: 500px;
+        margin-bottom: 20px;
+        background-color: white;
+        padding: 90px 82px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .new-customer-fact {
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            border-top: 1px solid #f08ccd;
+            border-bottom: 1px solid #f08ccd;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .sign-in-btn {
+            height: 40px;
+            width: 180px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            background-color: #8CD0E3;
+            box-shadow: 3px 3px 0 #f5ea77;
+
+            &:hover {
+                box-shadow: 3px 3px 0 #fdb1be;
+                background-color: #948AD3;
+            }
+        }
+    }
+}

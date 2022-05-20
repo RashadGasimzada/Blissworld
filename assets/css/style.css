@@ -1092,7 +1092,7 @@ footer .ftr-box .mail-box p {
   line-height: 21px;
 }
 
-footer .ftr-box .mail-box form .mail-text {
+form .mail-text {
   background-color: #fff;
   border-color: #ccc;
   border-style: solid;
@@ -1105,11 +1105,11 @@ footer .ftr-box .mail-box form .mail-text {
   padding-left: 10px;
 }
 
-footer .ftr-box .mail-box form .mail-text:focus-visible {
+form .mail-text:focus-visible {
   outline: none;
 }
 
-footer .ftr-box .mail-box form .mail-btn {
+form .mail-btn {
   height: 40px;
   width: 100%;
   border: none;
@@ -1120,7 +1120,7 @@ footer .ftr-box .mail-box form .mail-btn {
           box-shadow: 3px 3px 0 #fdb1be;
 }
 
-footer .ftr-box .mail-box form .mail-btn:hover {
+form .mail-btn:hover {
   background-color: #948AD3;
 }
 
@@ -1189,16 +1189,6 @@ footer .ftr-box .mail-box form .mail-btn:hover {
   margin-bottom: 24px;
 }
 
-.col-info .item-info .read-reviews {
-  font-size: 13px;
-  color: black;
-  text-decoration: underline;
-}
-
-.col-info .item-info .read-reviews:hover {
-  color: #757575;
-}
-
 .col-info .item-info .item-count {
   border: 1px solid #c2c2c2;
   padding: 4px 8px;
@@ -1231,6 +1221,16 @@ footer .ftr-box .mail-box form .mail-btn:hover {
   -webkit-box-shadow: 3px 3px 0 #fdb1be;
           box-shadow: 3px 3px 0 #fdb1be;
   background-color: #948AD3;
+}
+
+.read-reviews {
+  font-size: 13px;
+  color: black;
+  text-decoration: underline;
+}
+
+.read-reviews:hover {
+  color: #757575;
 }
 
 .desc-box {
@@ -1345,6 +1345,67 @@ p {
 .heroes-white-back .heroes-box .heroes-col h3 {
   font-size: 20px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 576px) {
+  .sign-in-back {
+    padding: 10px !important;
+  }
+  .sign-in-back .sign-in-box {
+    padding: 0 !important;
+  }
+}
+
+.sign-in-back {
+  background-image: url("../img/circle-bk.png");
+  background-color: #f6ecf3;
+  padding: 50px 45px 80px;
+}
+
+.sign-in-back .sign-in-box {
+  height: 500px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 90px 82px;
+}
+
+.sign-in-back .sign-in-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sign-in-back .sign-in-box p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.sign-in-back .sign-in-box .new-customer-fact {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  border-top: 1px solid #f08ccd;
+  border-bottom: 1px solid #f08ccd;
+}
+
+.sign-in-back .sign-in-box .new-customer-fact p {
+  margin: 0;
+}
+
+.sign-in-back .sign-in-box .sign-in-btn {
+  height: 40px;
+  width: 180px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: #8CD0E3;
+  -webkit-box-shadow: 3px 3px 0 #f5ea77;
+          box-shadow: 3px 3px 0 #f5ea77;
+}
+
+.sign-in-back .sign-in-box .sign-in-btn:hover {
+  -webkit-box-shadow: 3px 3px 0 #fdb1be;
+          box-shadow: 3px 3px 0 #fdb1be;
+  background-color: #948AD3;
 }
 
 * {
