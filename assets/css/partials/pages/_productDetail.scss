@@ -50,22 +50,7 @@
 
        
 
-        .item-count {
-            border: 1px solid #c2c2c2;
-            padding: 4px 8px;
-            width: 86px;
-
-            input {
-                background-color: transparent;
-                border: none;
-                width: 30px;
-                text-align: center;
-            }
-
-            i {
-                cursor: pointer;
-            }
-        }
+       
 
         .item-btn {
             height: 40px;
@@ -83,6 +68,22 @@
         }
 
 
+    }
+}
+.info-item-count {
+    border: 1px solid #c2c2c2;
+    padding: 4px 8px;
+    width: 86px;
+
+    input {
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        text-align: center;
+    }
+
+    i {
+        cursor: pointer;
     }
 }
 .read-reviews {

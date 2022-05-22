@@ -1189,23 +1189,6 @@ form .mail-btn:hover {
   margin-bottom: 24px;
 }
 
-.col-info .item-info .item-count {
-  border: 1px solid #c2c2c2;
-  padding: 4px 8px;
-  width: 86px;
-}
-
-.col-info .item-info .item-count input {
-  background-color: transparent;
-  border: none;
-  width: 30px;
-  text-align: center;
-}
-
-.col-info .item-info .item-count i {
-  cursor: pointer;
-}
-
 .col-info .item-info .item-btn {
   height: 40px;
   width: 180px;
@@ -1221,6 +1204,23 @@ form .mail-btn:hover {
   -webkit-box-shadow: 3px 3px 0 #fdb1be;
           box-shadow: 3px 3px 0 #fdb1be;
   background-color: #948AD3;
+}
+
+.info-item-count {
+  border: 1px solid #c2c2c2;
+  padding: 4px 8px;
+  width: 86px;
+}
+
+.info-item-count input {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  text-align: center;
+}
+
+.info-item-count i {
+  cursor: pointer;
 }
 
 .read-reviews {
@@ -1403,6 +1403,33 @@ p {
 }
 
 .sign-in-back .sign-in-box .sign-in-btn:hover {
+  -webkit-box-shadow: 3px 3px 0 #fdb1be;
+          box-shadow: 3px 3px 0 #fdb1be;
+  background-color: #948AD3;
+}
+
+.basket-box {
+  background-color: white;
+  padding: 20px;
+}
+
+.basket-box .basket-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.basket-box .checkout-btn {
+  height: 40px;
+  width: 180px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: #8CD0E3;
+  -webkit-box-shadow: 3px 3px 0 #f5ea77;
+          box-shadow: 3px 3px 0 #f5ea77;
+}
+
+.basket-box .checkout-btn:hover {
   -webkit-box-shadow: 3px 3px 0 #fdb1be;
           box-shadow: 3px 3px 0 #fdb1be;
   background-color: #948AD3;

@@ -1,3 +1,4 @@
+import { getProductCount } from "./common.js"
 $(function () {
     var modal = $("#myModal");
 
@@ -150,7 +151,7 @@ $(function () {
         margin: 10,
         loop: false,
         nav: false,
-       
+
 
         responsive: {
             0: {
@@ -168,7 +169,7 @@ $(function () {
         margin: 10,
         loop: false,
         nav: false,
-       
+
 
         responsive: {
             0: {
@@ -190,9 +191,9 @@ $(function () {
 
 
     $(window).scroll(function () {
-        
+
         if ($(document).scrollTop() > 40) {
-            if($(window).width() < 510) {
+            if ($(window).width() < 510) {
                 $(".menu-box").css({
                     'position': 'fixed',
                     'width': '92%',
@@ -209,7 +210,7 @@ $(function () {
                 })
                 $(".hidden-menu-box").removeClass("d-none");
             }
-           
+
         }
         else {
             $(".menu-box").css({
@@ -223,27 +224,32 @@ $(function () {
     });
 
 
-    $(".fa-minus").click(function(){
+    $(".fa-minus").click(function () {
         if ($(".item-count input").val() > 1) {
-            $(".item-count input").val( function(i, oldval) {
+            $(".item-count input").val(function (i, oldval) {
                 return --oldval;
             });
         }
 
 
     })
-    $(".fa-plus").click(function(){
+    $(".fa-plus").click(function () {
         if ($(".item-count input").val() < 10) {
-            $(".item-count input").val( function(i, oldval) {
+            $(".item-count input").val(function (i, oldval) {
                 return ++oldval;
             });
         }
     })
 
+    $(".basket-count .fa-plus").click(function () {
+        $(".price").text("$" + $(".item-count input").val() * $(".price").removeText('$'));
+
+    })
 
 
-    $(".tabs li").click(function() {
-        
+
+    $(".tabs li").click(function () {
+
         $(".tabs li").removeClass("active");
         $(this).addClass("active");
         if ($("#tab-1").hasClass("active")) {
@@ -262,10 +268,48 @@ $(function () {
         }
     })
 
+    
+
+    let ideaBtns = $(".idea-btn");
+    let arrivalBtns = $(".arrival-btn");
+    let countElem = $(".item-count");
+
+    if (jQuery.parseJSON(localStorage.getItem("products")) == null) {
+        localStorage.setItem("products", JSON.stringify([]));
+    }
+    let products = JSON.parse(localStorage.getItem("products"));
 
 
+    ideaBtns.click(function (e) {
+        e.preventDefault();
+        let productId = $(this).parent().parent().attr("data-id");
+        let productImg = $(this).parent().prev().attr("src");
+        let productName = $(this).prev().prev().text();
+        let productDesc = $(this).prev().text();
+        let productPrice = $(this).find(">:first-child").text();
+        let existProduct = products.find(m => m.id == productId);
+
+        if (existProduct == undefined) {
+            products.push({
+                id: productId,
+                img: productImg,
+                name: productName,
+                description: productDesc,
+                price: productPrice,
+                count: 1
+            })
+        } else {
+            existProduct.count += 1;
+        }
+
+        localStorage.setItem("products", JSON.stringify(products));
+        countElem.text(getProductCount(products))
+    })
 
 
+    
+
+    countElem.text(getProductCount(products))
 
 
 })

@@ -1,0 +1,22 @@
+.basket-box {
+    background-color: white;
+    padding: 20px;
+    .basket-title {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .checkout-btn {
+        height: 40px;
+        width: 180px;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        background-color: #8CD0E3;
+        box-shadow: 3px 3px 0 #f5ea77;
+
+        &:hover {
+            box-shadow: 3px 3px 0 #fdb1be;
+            background-color: #948AD3;
+        }
+    }
+}
