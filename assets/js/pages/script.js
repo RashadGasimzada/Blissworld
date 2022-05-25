@@ -224,27 +224,9 @@ $(function () {
     });
 
 
-    $(".fa-minus").click(function () {
-        if ($(".item-count input").val() > 1) {
-            $(".item-count input").val(function (i, oldval) {
-                return --oldval;
-            });
-        }
+    
 
-
-    })
-    $(".fa-plus").click(function () {
-        if ($(".item-count input").val() < 10) {
-            $(".item-count input").val(function (i, oldval) {
-                return ++oldval;
-            });
-        }
-    })
-
-    $(".basket-count .fa-plus").click(function () {
-        $(".price").text("$" + $(".item-count input").val() * $(".price").removeText('$'));
-
-    })
+   
 
 
 
@@ -268,7 +250,7 @@ $(function () {
         }
     })
 
-    
+
 
     let ideaBtns = $(".idea-btn");
     let arrivalBtns = $(".arrival-btn");
@@ -279,7 +261,82 @@ $(function () {
     }
     let products = JSON.parse(localStorage.getItem("products"));
 
+    getProductList(products)
+    function getProductList(list) {
+        for(const product of list) {
+                $(".modal-body").append(` <div class="row">
+                <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                    <!-- Image -->
+                    <div class="bg-image hover-overlay hover-zoom ripple rounded"
+                        data-mdb-ripple-color="light">
+                        <img src="${product.img}" class="w-100" alt="Blue Jeans Jacket" />
+                        <a href="#!">
+                            <div class="mask"
+                                style="background-color: rgba(251, 251, 251, 0.2)">
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Image -->
+                </div>
+        
+                <div
+                    class="col-md-6 d-flex justify-content-center flex-column col-sm-12 mb-4 mb-lg-0">
+                    <!-- Data -->
+                    <p style="font-size: 12px;"><strong class="exist-name">${product.name}</strong></p>
+                    <p style="font-size: 11px;">${product.description}</p>
+                    <!-- Data -->
+                </div>
+        
+               
+              
+            </div>`)
+           
+            
+        
+        }
+        
+    }
+    function clickProductList(list) {
+     
+                $(".modal-body").append(` <div class="row">
+                <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                    <!-- Image -->
+                    <div class="bg-image hover-overlay hover-zoom ripple rounded"
+                        data-mdb-ripple-color="light">
+                        <img src="${list.img}" class="w-100" alt="Blue Jeans Jacket" />
+                        <a href="#!">
+                            <div class="mask"
+                                style="background-color: rgba(251, 251, 251, 0.2)">
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Image -->
+                </div>
+        
+                <div
+                    class="col-md-6 d-flex justify-content-center flex-column col-sm-12 mb-4 mb-lg-0">
+                    <!-- Data -->
+                    <p style="font-size: 12px;"><strong class="exist-name">${list.name}</strong></p>
+                    <p style="font-size: 11px;">${list.description}</p>
+                    <!-- Data -->
+                </div>
+        
+               
+              
+            </div>`)
+           
+            
+        
+     
+        
+    }
 
+
+    let summaryPrice = parseInt($(".summary-price").text())
+    for (let product = 0; product < products.length; product++) { 
+        summaryPrice += products[product].price * products[product].count;
+        $(".summary-price").text(summaryPrice)
+    }
     ideaBtns.click(function (e) {
         e.preventDefault();
         let productId = $(this).parent().parent().attr("data-id");
@@ -298,20 +355,81 @@ $(function () {
                 price: productPrice,
                 count: 1
             })
+            clickProductList(products[products.length -1]);
         } else {
-            existProduct.count += 1;
+            if(existProduct.count < 10) {
+                existProduct.count += 1;
+            }
         }
 
         localStorage.setItem("products", JSON.stringify(products));
         countElem.text(getProductCount(products))
+        if(countElem.text() != 0) {
+            $(".empty-modal").addClass("d-none");
+     
+        }
+        else {
+            $(".empty-modal").removeClass("d-none");
+      
+        }
+      
+     
+        
+    })
+
+    arrivalBtns.click(function (e) {
+        e.preventDefault();
+
+        let productId = $(this).parent().parent().attr("data-id");
+        let productImg = $(this).parent().parent().find(">:first-child").css("background-image").slice(4, -1).replace(/"/g, "");
+        let productName = $(this).prev().prev().text();
+        let productDesc = $(this).prev().text();
+        let productPrice = $(this).find(">:first-child").text();
+        let existProduct = products.find(m => m.id == productId);
+        if (existProduct == undefined) {
+            products.push({
+                id: productId,
+                img: productImg,
+                name: productName,
+                description: productDesc,
+                price: productPrice,
+                count: 1
+            })
+            clickProductList(products[products.length -1]);
+        } else {
+            if(existProduct.count <= 10) {
+                existProduct.count += 1;
+            }
+            
+        }
+
+        localStorage.setItem("products", JSON.stringify(products));
+        countElem.text(getProductCount(products))
+        if(countElem.text() != 0) {
+            $(".empty-modal").addClass("d-none");
+  
+        }
+        else {
+            $(".empty-modal").removeClass("d-none");
+        
+        }
+       
+      
     })
 
 
+    countElem.text(getProductCount(products))
+    if(countElem.text() != 0) {
+        $(".empty-modal").addClass("d-none");
+     
+    }
+    else {
+        $(".empty-modal").removeClass("d-none");
+     
+    }
     
 
-    countElem.text(getProductCount(products))
-
-
+    
 })
 var modal = document.getElementById("myModal");
 window.onclick = function (event) {

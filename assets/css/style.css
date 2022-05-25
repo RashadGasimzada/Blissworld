@@ -150,6 +150,9 @@ input[type="search"]::-webkit-search-results-decoration {
   .arrivals-container {
     padding: 0 15px !important;
   }
+  .modal-body {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -566,7 +569,19 @@ main .modal-position .my-modal .my-modal-content {
 }
 
 main .modal-position .my-modal .my-modal-content .modal-body {
-  padding: 2px 16px;
+  padding: 30px 16px;
+}
+
+main .modal-position .my-modal .my-modal-content .modal-body .view-full {
+  text-align: end;
+  margin: 20px;
+  display: inline-block;
+  color: black;
+  font-size: 14px;
+}
+
+main .modal-position .my-modal .my-modal-content .modal-body .view-full:hover {
+  color: #757575;
 }
 
 main .modal-position .my-modal .my-modal-content .modal-body .empty-modal {
@@ -1124,6 +1139,29 @@ form .mail-btn:hover {
   background-color: #948AD3;
 }
 
+.basket-count {
+  width: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket-count .fa-solid {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.basket-count input {
+  width: 100%;
+}
+
 .owl-dot span {
   background: transparent !important;
   border: 1px solid #C1C1C1 !important;
@@ -1406,6 +1444,12 @@ p {
   -webkit-box-shadow: 3px 3px 0 #fdb1be;
           box-shadow: 3px 3px 0 #fdb1be;
   background-color: #948AD3;
+}
+
+@media only screen and (max-width: 992px) {
+  .text-start {
+    text-align: center !important;
+  }
 }
 
 .basket-box {

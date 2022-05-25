@@ -172,6 +172,9 @@ input[type="search"]::-webkit-search-results-decoration {
     .arrivals-container {
         padding: 0 15px !important;
     }
+    .modal-body {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -649,7 +652,18 @@ main {
                 animation-duration: 0.4s;
 
                 .modal-body {
-                    padding: 2px 16px;
+                    padding: 30px 16px;
+
+                    .view-full {
+                        text-align: end;
+                        margin: 20px;
+                        display: inline-block;
+                        color: black;
+                        font-size: 14px;
+                        &:hover {
+                            color: #757575;
+                        }
+                    }
 
                     .empty-modal {
                         display: inline-block;
@@ -831,7 +845,7 @@ main {
                     padding: 0 0 15px 0;
                     position: relative;
 
-                   
+
 
                     .card-title {
                         font-size: 16px;
@@ -908,6 +922,7 @@ main {
             }
         }
     }
+
     .rating {
         margin-bottom: 8px;
 
@@ -1104,7 +1119,7 @@ main {
 footer {
     .ftr-box {
         border-top: 1px solid #e5e5e5;
-  
+
         background-color: #73d2e6;
 
         .left-side-ftr {
@@ -1120,9 +1135,11 @@ footer {
                 line-height: 22px;
                 color: white;
             }
+
             p {
                 color: white;
             }
+
             ul li {
                 padding: 0;
                 background-color: transparent;
@@ -1156,11 +1173,12 @@ footer {
                 line-height: 21px;
             }
 
-            
+
 
         }
     }
 }
+
 form {
     .mail-text {
         background-color: #fff;
@@ -1173,6 +1191,7 @@ form {
         font-size: 15px;
         margin-bottom: 30px;
         padding-left: 10px;
+
         &:focus-visible {
             outline: none;
         }
@@ -1186,12 +1205,25 @@ form {
         cursor: pointer;
         background-color: #8CD0E3;
         box-shadow: 3px 3px 0 #fdb1be;
+
         &:hover {
             background-color: #948AD3;
         }
     }
 }
-
+.basket-count {
+    width: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .fa-solid {
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    input {
+        width: 100%;
+    }
+}
 
 .owl-dot {
     span {
