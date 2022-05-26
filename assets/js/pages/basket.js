@@ -67,9 +67,11 @@ $(function () {
         }
 
     }
-    let summaryPrice = parseInt($(".summary-price").text())
+    let summaryPrice = 0;
     for (let product = 0; product < products.length; product++) { 
-        summaryPrice += products[product].price * products[product].count;
+        if(products[product] != products[length -1]) {
+            summaryPrice += products[product].price * products[product].count;
+        }
         $(".summary-price").text(summaryPrice)
     }
     $(".basket-items-card").find(">:first-child").find(">:first-child").text("Cart - " + products.length + " items");

@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+        integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -87,7 +90,7 @@
                                         <a class="nav-link" href="#">BEST SELLERS</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">SCIN CARE</a>
+                                        <a class="nav-link" href="./categories.html">SCIN CARE</a>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">BODY & HAIR CARE</a>
                                     </li>
@@ -121,15 +124,15 @@
                         <div class="my-modal-content">
                             <div class="modal-body">
                                 <span class="empty-modal">Your cart is empty</span>
-                               
-                                    <a  class="view-full" href="./basket.html">View full shopping bag >></a>
-                              
-                          
-                                </div>
+
+                                <a class="view-full d-none" href="./basket.html">View full shopping bag >></a>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <section id="slider">
@@ -191,7 +194,8 @@
                         <div class="owl-carousel second-slider owl-theme">
                             <div class="card-box">
                                 <div class="card" data-id="1">
-                                    <a href="./productdetail.html" class="card-img-top arrivals-img img-1"><span>NEW</span></a>
+                                    <a href="./productdetail.html"
+                                        class="card-img-top arrivals-img img-1"><span>NEW</span></a>
                                     <div class="card-body">
                                         <div class="rating">
                                             <i class="fa-solid fa-heart"></i>
@@ -202,13 +206,14 @@
                                         </div>
                                         <a href="./productdetail.html" class="card-title">Skin-mergency Ampoules Kit</a>
                                         <p class="card-text">Instant Relief Treatment Set</p>
-                                        <a href="./productdetail.html" class="btn arrival-btn btn-primary">ADD TO BAG $<span class="idea-price">22</span></a>
+                                        <a href="./productdetail.html" class="btn arrival-btn btn-primary">ADD TO BAG
+                                            $<span class="idea-price">22</span></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-box">
                                 <div class="card" data-id="2">
-                                    <a href="#" class="card-img-top arrivals-img img-2"><span>NEW</span></a>
+                                    <a href="./productdetail.html" class="card-img-top arrivals-img img-2"><span>NEW</span></a>
                                     <div class="card-body">
                                         <div class="rating">
                                             <i class="fa-solid fa-heart my-heart"></i>
@@ -219,14 +224,15 @@
                                         </div>
                                         <a href="#" class="card-title">Texture Takedown Skin Smoothing Body Butter</a>
                                         <p class="card-text">For Rough, Bumpy Skin</p>
-                                        <a href="#" class="btn arrival-btn btn-primary">ADD TO BAG $<span class="idea-price">15</span></a>
+                                        <a href="#" class="btn arrival-btn btn-primary">ADD TO BAG $<span
+                                                class="idea-price">15</span></a>
 
                                     </div>
                                 </div>
                             </div>
                             <div class="card-box">
                                 <div class="card" data-id="3">
-                                    <a href="#" class="card-img-top arrivals-img img-3"><span>NEW</span></a>
+                                    <a href="./productdetail.html" class="card-img-top arrivals-img img-3"><span>NEW</span></a>
                                     <div class="card-body">
                                         <div class="rating">
                                             <i class="fa-solid fa-heart"></i>
@@ -240,13 +246,14 @@
                                         <p class="card-text">
                                             Ultra-Hydrating Moisturizer Concentrate
                                         </p>
-                                        <a href="#" class="btn arrival-btn btn-primary">ADD TO BAG $<span class="idea-price">25</span></a>
+                                        <a href="#" class="btn arrival-btn btn-primary">ADD TO BAG $<span
+                                                class="idea-price">25</span></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-box">
                                 <div class="card" data-id="4">
-                                    <a href="#" class="card-img-top arrivals-img img-4"><span>NEW</span></a>
+                                    <a href="./productdetail.html" class="card-img-top arrivals-img img-4"><span>NEW</span></a>
                                     <div class="card-body">
                                         <div class="rating">
                                             <i class="fa-solid fa-heart"></i>
@@ -260,7 +267,8 @@
                                         <p class="card-text">
                                             Skin Balancing Milky Toner + Serum
                                         </p>
-                                        <a href="#" class="btn arrival-btn btn-primary">ADD TO BAG $<span class="idea-price">20</span></a>
+                                        <a href="#" class="btn arrival-btn btn-primary">ADD TO BAG $<span
+                                                class="idea-price">20</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +468,8 @@
                                     <a href="#" class="card-title">Bright Idea Moisturizer</a>
                                     <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting & Brightening
                                         Moisturizer</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span class="idea-price">26</span></a>
+                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span
+                                            class="idea-price">26</span></a>
                                 </div>
                             </div>
                         </div>
@@ -472,7 +481,8 @@
                                     <a href="#" class="card-title">Bright Idea Serum</a>
                                     <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting & Brightening Serum
                                     </p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span class="idea-price">28</span></a>
+                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span
+                                            class="idea-price">28</span></a>
                                 </div>
                             </div>
                         </div>
@@ -483,7 +493,8 @@
                                 <div class="card-body">
                                     <a href="#" class="card-title">Bright Idea Eye Cream</a>
                                     <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting Eye Cream</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span class="idea-price">25</span></a>
+                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span
+                                            class="idea-price">25</span></a>
                                 </div>
                             </div>
                         </div>
@@ -495,7 +506,8 @@
                                 <div class="card-body">
                                     <a href="#" class="card-title">Bright Idea Eyes</a>
                                     <p class="card-text">Holographic Foil Eye Patches</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span class="idea-price">4</span></a>
+                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span
+                                            class="idea-price">4</span></a>
                                 </div>
                             </div>
                         </div>
@@ -507,7 +519,8 @@
                                 <div class="card-body">
                                     <a href="#" class="card-title">Bright Idea Face Mask</a>
                                     <p class="card-text">Holographic Foil Sheet Mask</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span class="idea-price">4</span></a>
+                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span
+                                            class="idea-price">4</span></a>
                                 </div>
                             </div>
                         </div>
@@ -520,7 +533,8 @@
                                     <a href="#" class="card-title">Bright Idea Moisturizer Travel Mini</a>
                                     <p class="card-text">Vitamin C + Tri-Peptide Collagen Protecting & Brightening
                                         Moisturizer</p>
-                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span class="idea-price">5</span></a>
+                                    <a href="#" class="btn idea-btn btn-primary">ADD TO BAG $<span
+                                            class="idea-price">5</span></a>
                                 </div>
                             </div>
                         </div>
@@ -617,30 +631,30 @@
                                         </a>
                                     </li>
                                     <li class="list-group-item"><a href="#">
-                                        Ordering & Payment
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">
-                                        SMS Texts and Alerts
-                                    </a>
-                                </li>
+                                            Ordering & Payment
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">
+                                            SMS Texts and Alerts
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <h3>THE DRY STAFF</h3>
                                 <ul class="list-group">
                                     <li class="list-group-item"><a href="#">
-                                        Privacy Policy
+                                            Privacy Policy
                                         </a>
                                     </li>
                                     <li class="list-group-item">
                                         <a href="#">
-                                            Terms & Conditions 
+                                            Terms & Conditions
                                         </a>
                                     </li>
                                     <li class="list-group-item"><a href="#">
-                                        Accessibility Statement
+                                            Accessibility Statement
                                         </a>
                                     </li>
                                     <li class="list-group-item">
@@ -679,6 +693,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="./assets/js/pages/script.js"></script>
 </body>

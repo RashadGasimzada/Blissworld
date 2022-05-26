@@ -5,6 +5,10 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
+#toast-container > .toast {
+  width: 285px !important;
+}
+
 @media only screen and (max-width: 355px) {
   .arrivals-img {
     height: 300px !important;
@@ -1477,6 +1481,28 @@ p {
   -webkit-box-shadow: 3px 3px 0 #fdb1be;
           box-shadow: 3px 3px 0 #fdb1be;
   background-color: #948AD3;
+}
+
+.bestsellers-box {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #8ed4e8), to(#8f7be8));
+  background: linear-gradient(to right, #8ed4e8 0, #8f7be8 100%);
+}
+
+.bestsellers-box .title-box {
+  padding: 40px 96px;
+}
+
+.bestsellers-box .title-box h1 {
+  font-size: 35px;
+  line-height: 39px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bestsellers-box .title-box p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
 }
 
 * {

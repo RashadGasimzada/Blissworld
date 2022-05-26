@@ -63,7 +63,7 @@ $(function () {
         $(".bag-text").css("color", "white");
     });
 
-    $("#basket-btn").click(function () {
+    $("#basket-btn").click(function (e) {
         if ($(".navbar-collapse").hasClass("show")) {
             $(".navbar-collapse").removeClass("show")
         }
@@ -224,9 +224,9 @@ $(function () {
     });
 
 
-    
 
-   
+
+
 
 
 
@@ -263,8 +263,8 @@ $(function () {
 
     getProductList(products)
     function getProductList(list) {
-        for(const product of list) {
-                $(".modal-body").append(` <div class="row">
+        for (const product of list) {
+            $(".modal-body").append(` <div class="row">
                 <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
                     <!-- Image -->
                     <div class="bg-image hover-overlay hover-zoom ripple rounded"
@@ -290,15 +290,15 @@ $(function () {
                
               
             </div>`)
-           
-            
-        
+
+
+
         }
-        
+
     }
     function clickProductList(list) {
-     
-                $(".modal-body").append(` <div class="row">
+
+        $(".modal-body").append(` <div class="row">
                 <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
                     <!-- Image -->
                     <div class="bg-image hover-overlay hover-zoom ripple rounded"
@@ -324,16 +324,15 @@ $(function () {
                
               
             </div>`)
-           
-            
-        
-     
-        
+
+
+
+
+
     }
 
-
     let summaryPrice = parseInt($(".summary-price").text())
-    for (let product = 0; product < products.length; product++) { 
+    for (let product = 0; product < products.length; product++) {
         summaryPrice += products[product].price * products[product].count;
         $(".summary-price").text(summaryPrice)
     }
@@ -345,8 +344,10 @@ $(function () {
         let productDesc = $(this).prev().text();
         let productPrice = $(this).find(">:first-child").text();
         let existProduct = products.find(m => m.id == productId);
-
-        if (existProduct == undefined) {
+        if (productId == undefined) {
+            return;
+        }
+        else if (existProduct == undefined) {
             products.push({
                 id: productId,
                 img: productImg,
@@ -355,26 +356,32 @@ $(function () {
                 price: productPrice,
                 count: 1
             })
-            clickProductList(products[products.length -1]);
+            clickProductList(products[products.length - 1]);
+            toastr.success(products[products.length - 1].name + " added to basket!")
         } else {
-            if(existProduct.count < 10) {
+            if (existProduct.count < 10) {
                 existProduct.count += 1;
+                toastr.success(existProduct.name + " added to basket!")
             }
         }
 
         localStorage.setItem("products", JSON.stringify(products));
         countElem.text(getProductCount(products))
-        if(countElem.text() != 0) {
+        if (countElem.text() != 0) {
             $(".empty-modal").addClass("d-none");
-     
+            $(".view-full").removeClass("d-none")
+
+
         }
         else {
             $(".empty-modal").removeClass("d-none");
-      
+            $(".view-full").addClass("d-none")
+
+
         }
-      
-     
-        
+
+
+
     })
 
     arrivalBtns.click(function (e) {
@@ -386,7 +393,10 @@ $(function () {
         let productDesc = $(this).prev().text();
         let productPrice = $(this).find(">:first-child").text();
         let existProduct = products.find(m => m.id == productId);
-        if (existProduct == undefined) {
+        if (productId == undefined) {
+            return;
+        }
+        else if (existProduct == undefined) {
             products.push({
                 id: productId,
                 img: productImg,
@@ -395,41 +405,62 @@ $(function () {
                 price: productPrice,
                 count: 1
             })
-            clickProductList(products[products.length -1]);
+            clickProductList(products[products.length - 1]);
+            toastr.success(products[products.length - 1].name + " added to basket!")
         } else {
-            if(existProduct.count <= 10) {
+            if (existProduct.count <= 10) {
                 existProduct.count += 1;
+                toastr.success(existProduct.name + " added to basket!")
             }
-            
+
         }
 
         localStorage.setItem("products", JSON.stringify(products));
         countElem.text(getProductCount(products))
-        if(countElem.text() != 0) {
+        if (countElem.text() != 0) {
             $(".empty-modal").addClass("d-none");
-  
+            $(".view-full").removeClass("d-none")
+
         }
         else {
             $(".empty-modal").removeClass("d-none");
-        
+            $(".view-full").addClass("d-none")
+
         }
-       
-      
+
+
     })
 
 
     countElem.text(getProductCount(products))
-    if(countElem.text() != 0) {
+    if (countElem.text() != 0) {
         $(".empty-modal").addClass("d-none");
-     
+        $(".view-full").removeClass("d-none")
+
     }
     else {
         $(".empty-modal").removeClass("d-none");
-     
-    }
-    
+        $(".view-full").addClass("d-none")
 
-    
+    }
+
+    $(".hidden-search").keypress(function (event) {
+        let keycode = (event.keyCode ? event.keyCode : event.which);
+
+
+
+        if (keycode == '13') {
+            if($(".card-title").text().indexOf($(".hidden-search").val()) != -1) {
+                window.location.replace("http://127.0.0.1:5500/search.html");
+                console.log($(".card-title:contains('" + $(".hidden-search").val() + "')"));
+                return false;
+            }
+            
+        }
+
+    });
+
+
 })
 var modal = document.getElementById("myModal");
 window.onclick = function (event) {
