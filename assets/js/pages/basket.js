@@ -83,7 +83,7 @@ $(function () {
                 products.splice(product, 1);
                 $(".basket-items-card").find(">:first-child").find(">:first-child").text("Cart - " + products.length + " items");
                 localStorage.setItem("products", JSON.stringify(products));
-                
+               
                 
             }
             if(products[product] != products[length -1]) {
