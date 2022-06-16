@@ -1691,6 +1691,10 @@ p {
           align-items: center;
 }
 
+#categories-main .pages span {
+  cursor: pointer;
+}
+
 #categories-main .pages .current {
   border: 1px solid gray;
   color: black !important;
@@ -1700,6 +1704,141 @@ p {
   font-size: 1em;
   padding: 5px 12px;
   color: gray;
+}
+
+@media only screen and (max-width: 992px) {
+  .faq-text-box {
+    padding: 40px 50px 0 !important;
+  }
+}
+
+.faq-title-box {
+  background-color: #e3f6fa;
+  padding: 14px;
+  text-align: center;
+}
+
+.faq-title-box h1 {
+  margin: 0;
+}
+
+.faq-text-box {
+  background-color: white;
+  padding: 40px 0 0 100px;
+}
+
+.faq-text-box h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.faq-text-box .faq-title {
+  font-weight: bold;
+}
+
+.faq-text-box .faq-li {
+  list-style-type: disc;
+}
+
+.faq-text-box .last-faq-text {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 510px) {
+  .title-img {
+    width: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .title-img {
+    width: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .bliss-terracycle img {
+    width: 200px !important;
+  }
+}
+
+.thing-first-box {
+  background-color: white;
+  padding: 40px;
+}
+
+.thing-first-box h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.thing-first-box .icon-img-box img {
+  margin: 10px;
+  width: 100px;
+}
+
+.how-works-box {
+  background: #e3f6fa;
+  padding: 40px;
+}
+
+.how-works-box h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.how-works-box .howorks {
+  background-color: #b9e8f4;
+  height: 283px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.how-works-box .howorks img {
+  width: 155px;
+}
+
+.how-works-box .howorks p {
+  text-align: center;
+}
+
+.how-works-box .thanx {
+  padding-top: 65px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.how-works-box .btn {
+  height: 40px;
+  width: 180px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: #8CD0E3;
+  -webkit-box-shadow: 3px 3px 0 #f5ea77;
+          box-shadow: 3px 3px 0 #f5ea77;
+}
+
+.how-works-box .btn:hover {
+  -webkit-box-shadow: 3px 3px 0 #fdb1be;
+          box-shadow: 3px 3px 0 #fdb1be;
+  background-color: #948AD3;
 }
 
 * {

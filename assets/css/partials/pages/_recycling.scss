@@ -1,0 +1,80 @@
+@media only screen and (max-width: 1400px) and (min-width: 510px) {
+
+    .title-img {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+
+    .title-img {
+        width: 250px !important;
+    }
+}
+@media only screen and (max-width: 410px) {
+   .bliss-terracycle {
+    img {
+        width: 200px !important;
+    }
+   }
+}
+
+.thing-first-box {
+    background-color: white;
+    padding: 40px;
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .icon-img-box {
+        img {
+            margin: 10px;
+            width: 100px;
+        }
+    }
+}
+.how-works-box {
+    background: #e3f6fa;
+    padding: 40px;
+    h1 {
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .howorks {
+        background-color: #b9e8f4;
+        height: 283px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        img {
+            width: 155px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .thanx {
+        padding-top: 65px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .btn {
+        height: 40px;
+        width: 180px;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        background-color: #8CD0E3;
+        box-shadow: 3px 3px 0 #f5ea77;
+
+        &:hover {
+            box-shadow: 3px 3px 0 #fdb1be;
+            background-color: #948AD3;
+        }
+    }
+}
